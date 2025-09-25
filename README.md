@@ -40,25 +40,6 @@ npm run deploy
 ```
 The deploy command wraps `wrangler deploy`. Ensure `wrangler.toml` matches your Cloudflare bindings and that production R2 buckets contain the base scene.
 
-## Project Structure
-```
-├── src/worker.ts          # Worker + Durable Object implementation
-├── test/room.test.ts      # Vitest suite covering queue and reset behavior
-├── scripts/               # Prompt debug helpers and API smoke tests
-├── docs/                  # Product notes, hackathon brief, prompt guides
-├── DEVPOST-ABOUT.md       # Draft copy for Devpost submission
-├── DEVPOST-BUILT-WITH.md  # Tech stack summary for Devpost
-└── README.md              # You are here
-```
-
-## Additional Docs
-- Detailed product notes and hackathon background live in [`docs/`](docs/).
-- Prompting tips for FLUX.1 Kontext [dev] are in [`docs/FLUX-PROMPTGUIDE.md`](docs/FLUX-PROMPTGUIDE.md).
-- Submission narratives are drafted in [`DEVPOST-ABOUT.md`](DEVPOST-ABOUT.md) and [`DEVPOST-BUILT-WITH.md`](DEVPOST-BUILT-WITH.md).
-
-## Cleanup Checklist
-- The `.wrangler/` directory, SQLite artifacts, and demo images are ignored via `.gitignore`.
-- Admin test endpoints remain available for local debugging but are not required for production traffic.
 
 ## License
 MIT
