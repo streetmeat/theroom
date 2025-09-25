@@ -42,4 +42,4 @@ The deploy command wraps `wrangler deploy`. Ensure `wrangler.toml` matches your 
 
 
 ## License
-MIT
+Apache 2.0
