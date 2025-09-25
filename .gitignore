@@ -1,0 +1,14 @@
+.mf
+node_modules/
+.wrangler/
+.DS_Store
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+room2.jpg
+docs/
+.crush
+.env
+.dev.vars
+*.log
+wrangler.toml

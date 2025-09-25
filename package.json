@@ -1,0 +1,24 @@
+{
+  "name": "room-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --persist-to=./.wrangler/state",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "debug:flux": "node scripts/debug-flux.mjs",
+    "test": "vitest run",
+    "test:flux": "node scripts/test-flux-api.mjs"
+  },
+  "dependencies": {
+    "@fal-ai/client": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.9.4",
+    "@cloudflare/workers-types": "^4.20240903.0",
+    "typescript": "^5.6.2",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.39.0"
+  }
+}
